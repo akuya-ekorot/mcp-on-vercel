@@ -55,7 +55,7 @@ export function initializeMcpApiHandler(
       const sessionId = transport.sessionId;
       const server = new McpServer(
         {
-          name: "mcp-typescript server on vercel",
+          name: "gdrive",
           version: "0.1.0",
         },
         serverOptions
@@ -251,7 +251,7 @@ function createFakeIncomingMessage(
 
   // Create a readable stream that will be used as the base for IncomingMessage
   const readable = new Readable();
-  readable._read = (): void => {}; // Required implementation
+  readable._read = (): void => { }; // Required implementation
 
   // Add the body content if provided
   if (body) {
