@@ -218,7 +218,6 @@ export function initializeMcpApiHandler(
         await redis.unsubscribe(`responses:${sessionId}:${requestId}`);
       });
     } else if (url.pathname === "/") {
-    } else if (url.pathname === "/") {
       res.statusCode = 200;
       res.end("Hello, world!");
     } else {
